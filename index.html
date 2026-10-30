@@ -7,7 +7,7 @@
   <title>Linduo Li</title>
   <meta
     name="description"
-    content="Linduo Li — MSc student in Data and Artificial Intelligence at Institut Polytechnique de Paris. Research interests include natural language processing, computer vision, and LLM applications."
+    content="Linduo Li — Master's student in Artificial Intelligence, Systems and Data at Université Paris Sciences et Lettres (PSL). Research interests include natural language processing, computer vision, and LLM applications."
   />
 
   <link rel="icon" href="assets/favicon.ico" />
@@ -20,6 +20,45 @@
   >
 
   <link rel="stylesheet" href="assets/style.css" />
+
+  <style>
+    .intro-text > section:first-child .section-title {
+      margin-top: 0;
+    }
+
+    .education-list {
+      display: grid;
+      gap: 22px;
+    }
+
+    .education-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 4px 16px;
+    }
+
+    .education-school {
+      font-weight: 600;
+    }
+
+    .education-dates,
+    .education-location {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .education-degree {
+      margin-top: 3px;
+      font-size: 0.96rem;
+      line-height: 1.55;
+    }
+
+    .education-location {
+      margin-top: 2px;
+    }
+  </style>
 </head>
 
 <body>
@@ -33,14 +72,8 @@
 
         <h1>Linduo Li</h1>
 
-        <p class="profile-subtitle">
-          MSc Student<br>
-          Data & Artificial Intelligence<br>
-          Institut Polytechnique de Paris
-        </p>
-
         <div class="profile-links">
-          <a href="mailto:li.linduo@ip-paris.fr">
+          <a href="mailto:linduo.li@dauphine.eu">
             <span class="profile-link-icon">✉️</span>
             <span>Email</span>
           </a>
@@ -63,47 +96,88 @@
       </div>
 
       <div class="intro-text">
-        <p>
-          Hi, I’m Linduo Li, a Master student in Data and Artificial Intelligence at
-          Institut Polytechnique de Paris.
-        </p>
+        <section class="about-me" aria-labelledby="about-heading">
+          <h2 class="section-title" id="about-heading">About Me</h2>
 
-        <p>
-          My research interests are mainly in natural language processing and computer vision, with
-          a broader interest in building large language model applications for domain-specific problems.
-          I am interested in identifying niche areas where AI systems can address concrete pain points,
-          and in designing practical workflows that connect machine learning methods with real-world use cases.
-        </p>
+          <p>
+            Hi, I'm Linduo Li, a Master's student in Artificial Intelligence,
+            Systems and Data (IASD) at Université Paris Sciences et Lettres (PSL).
+          </p>
 
-        <p>
-          Recently, I have worked on
-          <a href="https://github.com/LiLinduo/Information-Retrieval-for-Tax-Strategies" target="_blank" rel="noreferrer">
-            information retrieval for tax law
-          </a>,
-          studying how retrieval systems can identify relevant legal authorities from complex, goal-oriented
-          queries. I have also worked on
-          <a href="https://github.com/BostonListener/CAA_2026" target="_blank" rel="noreferrer">
-            archaeological site detection and recognition
-          </a>,
-          where computer vision, remote sensing imagery, geospatial data, and domain knowledge are combined
-          to support AI-assisted site discovery.
-        </p>
+          <p>
+            My research interests are mainly in natural language processing and computer vision,
+            with a broader interest in building multimodal applications for domain-specific
+            problems. I am interested in identifying niche areas where AI systems can address concrete
+            pain points, and in designing practical workflows that connect AI methods with real-world use cases.
+          </p>
 
-        <p>
-          I completed my Bachelor of Science in Geophysics at Tongji University and later received my
-          Master of Science in Data Analytics Engineering from Northeastern University. After that, I worked
-          as a Data Scientist at
-          <a href="https://www.linkedin.com/company/blend360/" target="_blank" rel="noreferrer">Blend360</a>,
-          where I developed machine learning models for clients in the retail industry to solve business
-          problems such as customer retention, attribution analysis, and data-driven decision support.
-        </p>
+          <p>
+            Recently, I have worked on
+            <a href="https://github.com/LiLinduo/Information-Retrieval-for-Tax-Strategies" target="_blank" rel="noreferrer">
+              information retrieval for tax law
+            </a>,
+            studying how retrieval systems can identify relevant legal authorities from complex,
+            goal-oriented queries. I have also worked on
+            <a href="https://github.com/BostonListener/CAA_2026" target="_blank" rel="noreferrer">
+              archaeological site detection and recognition
+            </a>,
+            combining computer vision, remote sensing imagery, geospatial data, and domain knowledge
+            to support AI-assisted site discovery.
+          </p>
 
-        <p>
-          I then worked as a Large Language Model Developer and AI Engineer, focusing on the development of
-          LLM-powered application products. These experiences shaped my interest in both research-oriented
-          machine learning and deployable AI systems, and led me to continue my studies in Data and Artificial
-          Intelligence at Institut Polytechnique de Paris.
-        </p>
+          <p>
+            Previously, I worked as a Data Scientist at
+            <a href="https://www.linkedin.com/company/blend360/" target="_blank" rel="noreferrer">Blend360</a>,
+            where I developed machine learning models for clients in the retail industry, addressing
+            challenges such as customer retention, attribution analysis, and data-driven decision support.
+            I later worked as a Large Language Model Developer and AI Engineer at
+            <a href="https://boslis.com/" target="_blank" rel="noopener noreferrer">Boston Listener</a>,
+            focusing on LLM-powered applications. These experiences shaped my interest in both
+            research-oriented machine learning and practical, deployable AI systems.
+          </p>
+        </section>
+
+        <section class="education" aria-labelledby="education-heading">
+          <h2 class="section-title" id="education-heading">Education</h2>
+
+          <div class="education-list">
+            <div class="education-item">
+              <div class="education-heading">
+                <span class="education-school">Université Paris Sciences et Lettres</span>
+                <span class="education-dates">Sep 2026 – Present</span>
+              </div>
+              <div class="education-degree">Master's Year 2 (M2), Artificial Intelligence, Systems and Data</div>
+              <div class="education-location">Paris, France</div>
+            </div>
+
+            <div class="education-item">
+              <div class="education-heading">
+                <span class="education-school">Institut Polytechnique de Paris</span>
+                <span class="education-dates">Sep 2025 – Jul 2026</span>
+              </div>
+              <div class="education-degree">Master's Year 1 (M1), Data and Artificial Intelligence</div>
+              <div class="education-location">Paris, France</div>
+            </div>
+
+            <div class="education-item">
+              <div class="education-heading">
+                <span class="education-school">Northeastern University</span>
+                <span class="education-dates">Sep 2019 – Dec 2021</span>
+              </div>
+              <div class="education-degree">Master of Science in Data Analytics Engineering</div>
+              <div class="education-location">Boston, MA, USA</div>
+            </div>
+
+            <div class="education-item">
+              <div class="education-heading">
+                <span class="education-school">Tongji University</span>
+                <span class="education-dates">Sep 2013 – Jun 2018</span>
+              </div>
+              <div class="education-degree">Bachelor of Science in Geophysics</div>
+              <div class="education-location">Shanghai, China</div>
+            </div>
+          </div>
+        </section>
       </div>
     </section>
   </main>
